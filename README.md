@@ -19,3 +19,6 @@
 ```
 print "hoge";
 ```
+
+hogehoge
+
