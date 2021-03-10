@@ -10,5 +10,6 @@ jobs:
   build:
 
     runs-on: self-hosted
+    if: "contains(join(github.event.pull_request.labels.*.name), 'WIP')"
     steps:
     - uses: actions/checkout@v2
