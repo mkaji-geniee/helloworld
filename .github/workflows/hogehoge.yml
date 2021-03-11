@@ -11,6 +11,6 @@ jobs:
 
     runs-on: self-hosted
     timeout-minutes: 120 # 全体
-    if: "contains(join(github.event.pull_request.labels.*.name), 'WIP')"
+    if: "contains(join(github.event.pull_request.labels.*.name), 'WIP') == false"
     steps:
     - uses: actions/checkout@v2
